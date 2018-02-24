@@ -1,4 +1,4 @@
-abstract class Person {
+export abstract class Person {
     abstract readonly sex: string;
 
     constructor(public firstName: string = "", public lastName: string = ""){
@@ -12,7 +12,7 @@ abstract class Person {
     private fullName = (): string => `${this.firstName} ${this.lastName}`;
 }
 
-class Male extends Person {
+export class Male extends Person {
     readonly sex: string = 'Male';
     private _something: string = 'Something';
 
@@ -29,7 +29,7 @@ class Male extends Person {
     }
 }
 
-class Female extends Person {
+export class Female extends Person {
     readonly sex: string = 'Female';
 
     hello(): string{

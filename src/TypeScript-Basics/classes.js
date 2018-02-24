@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,6 +9,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+Object.defineProperty(exports, "__esModule", { value: true });
 var Person = /** @class */ (function () {
     function Person(firstName, lastName) {
         if (firstName === void 0) { firstName = ""; }
@@ -22,6 +24,7 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
+exports.Person = Person;
 var Male = /** @class */ (function (_super) {
     __extends(Male, _super);
     function Male() {
@@ -45,6 +48,7 @@ var Male = /** @class */ (function (_super) {
     };
     return Male;
 }(Person));
+exports.Male = Male;
 var Female = /** @class */ (function (_super) {
     __extends(Female, _super);
     function Female() {
@@ -57,6 +61,7 @@ var Female = /** @class */ (function (_super) {
     };
     return Female;
 }(Person));
+exports.Female = Female;
 var person;
 person = new Female('Female', 'Here');
 console.log(person.hello());
